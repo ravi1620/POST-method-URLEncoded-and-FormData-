@@ -51,7 +51,7 @@ app.post("/signup", upload.single("profilePic"), async (req, res) => {
       });
     
       await User.insertMany([newUser]);
-      res.json({status:"Success",msg:"User created succesuflly."});
+      res.json({status:"Success",msg:"User created succesfully."});
     
   } catch (error) {
     res.json({status:"Failed",msg:"Unable to create user.",error});
